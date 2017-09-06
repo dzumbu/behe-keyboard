@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Keyboard.iml" filepath="$PROJECT_DIR$/Keyboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tshivenda-keyboard.iml" filepath="$PROJECT_DIR$/tshivenda-keyboard.iml" />
     </modules>
   </component>
 </project>

@@ -1,8 +1,9 @@
-package com.vlath.keyboard;
+package za.co.musuku.tshivendakeyboard;
 
-import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+
+import tshivendakeyboard.R;
 
 /**
  * Created by Vlad on 6/20/2017.

@@ -1,4 +1,4 @@
-package com.vlath.keyboard;
+package za.co.musuku.tshivendakeyboard;
 
 /*
  * Copyright (C) 2008-2009 The Android Open Source Project
@@ -23,22 +23,17 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Paint;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.os.IBinder;
 import android.os.Vibrator;
 import android.preference.*;
-import android.support.v4.content.ContextCompat;
 import android.text.InputType;
 import android.text.method.MetaKeyKeyListener;
-import android.util.Log;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.inputmethod.CompletionInfo;
 import android.view.inputmethod.EditorInfo;
@@ -50,23 +45,21 @@ import android.view.textservice.SpellCheckerSession;
 import android.view.textservice.SuggestionsInfo;
 import android.view.textservice.TextInfo;
 import android.view.textservice.TextServicesManager;
-import android.webkit.WebChromeClient;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.PopupWindow;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/** Main class  of the keyboard, extending InputMethodService. Here we handle all the user interaction with the keyboard itself. */
+import tshivendakeyboard.R;
+
+/** Main class  of the co.za.musuku.tshivendakeyboard, extending InputMethodService. Here we handle all the user interaction with the co.za.musuku.tshivendakeyboard itself. */
 
 public class PCKeyboard extends InputMethodService
         implements KeyboardView.OnKeyboardActionListener, SpellCheckerSession.SpellCheckerSessionListener {
 
 
     /**
-     * As we don't want to bother changing the app theme, we use filters to theme the keyboard.
+     * As we don't want to bother changing the app theme, we use filters to theme the co.za.musuku.tshivendakeyboard.
      * Each filter needs an array of colors. The arrays are declared below.
      */
 
@@ -186,7 +179,7 @@ public class PCKeyboard extends InputMethodService
      */
     @Override public void onInitializeInterface() {
         if (mQwertyKeyboard != null) {
-            // Configuration changes can happen after the keyboard gets recreated,
+            // Configuration changes can happen after the co.za.musuku.tshivendakeyboard gets recreated,
             // so we need to be able to re-build the keyboards if the available
             // space has changed.
             int displayWidth = getMaxWidth();
@@ -247,7 +240,7 @@ public class PCKeyboard extends InputMethodService
      * about the target of our edits.
      *
      *
-     * And we have to reinitialize all we've one to make sure the keyboard aspect matches
+     * And we have to reinitialize all we've one to make sure the co.za.musuku.tshivendakeyboard aspect matches
      * The one selected in settings.
      */
     @Override public void onStartInput(EditorInfo attribute, boolean restarting) {
@@ -434,7 +427,7 @@ public class PCKeyboard extends InputMethodService
     }
 
     /**
-     * Helper to update the shift state of our keyboard based on the initial
+     * Helper to update the shift state of our co.za.musuku.tshivendakeyboard based on the initial
      * editor state.
      */
     private void updateShiftKeyState(EditorInfo attr) {
@@ -731,7 +724,7 @@ public class PCKeyboard extends InputMethodService
     }
     private void setCapsOn(boolean on) {
 
-        /** Simple function that enables us to rapidly set the keyboard shifted or not.
+        /** Simple function that enables us to rapidly set the co.za.musuku.tshivendakeyboard shifted or not.
          * */
         if(Variables.isShift()){
             kv.getKeyboard().setShifted(true);
@@ -910,7 +903,7 @@ public class PCKeyboard extends InputMethodService
     }
     private void setInputType() {
 
-        /** Checks the preferences for the default keyboard layout.
+        /** Checks the preferences for the default co.za.musuku.tshivendakeyboard layout.
          * If qwerty, we start out whether in qwerty or numbers, depending on the input type.
          * */
 

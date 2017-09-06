@@ -1,4 +1,4 @@
-package com.vlath.keyboard;
+package za.co.musuku.tshivendakeyboard;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
+
+import tshivendakeyboard.R;
 
 /**
  * Created by todo on 28.06.2017.

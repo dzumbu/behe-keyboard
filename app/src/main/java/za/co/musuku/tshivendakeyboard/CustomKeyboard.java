@@ -1,10 +1,9 @@
-package com.vlath.keyboard;
+package za.co.musuku.tshivendakeyboard;
 
 /**
  * Created by Vlad on 6/14/2017.
  */
 
-import android.graphics.Bitmap;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
@@ -17,17 +16,14 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.Keyboard.Key;
-import android.inputmethodservice.KeyboardView;
-import android.os.Vibrator;
 import android.util.AttributeSet;
-import android.util.Log;
-import android.view.KeyEvent;
-import android.view.View;
 import android.view.inputmethod.InputMethodSubtype;
 import android.widget.PopupWindow;
 
 import java.lang.reflect.Field;
 import java.util.List;
+
+import tshivendakeyboard.R;
 
 public class CustomKeyboard extends KeyboardView {
 
@@ -68,7 +64,7 @@ public class CustomKeyboard extends KeyboardView {
 
     void setSubtypeOnSpaceKey(final InputMethodSubtype subtype) {
         final LatinKeyboard keyboard = (LatinKeyboard)getKeyboard();
-        //keyboard.setSpaceIcon(getResources().getDrawable(subtype.getIconResId()));
+        //co.za.musuku.tshivendakeyboard.setSpaceIcon(getResources().getDrawable(subtype.getIconResId()));
         invalidateAllKeys();
     }
 

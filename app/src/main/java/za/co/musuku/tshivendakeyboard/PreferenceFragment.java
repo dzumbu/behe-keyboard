@@ -1,9 +1,10 @@
-package com.vlath.keyboard;
+package za.co.musuku.tshivendakeyboard;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.*;
-import android.preference.Preference;
+
+import tshivendakeyboard.R;
 
 /**
  * Created by todo on 30.06.2017.

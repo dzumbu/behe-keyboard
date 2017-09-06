@@ -1,4 +1,4 @@
-package com.vlath.keyboard;
+package za.co.musuku.tshivendakeyboard;
 
 /**
  * Created by todo on 02.08.2017.
@@ -30,11 +30,11 @@ import android.view.View;
         import android.graphics.Rect;
         import android.graphics.drawable.Drawable;
         import android.view.GestureDetector;
-        import android.view.MotionEvent;
-        import android.view.View;
 
-        import java.util.ArrayList;
+import java.util.ArrayList;
         import java.util.List;
+
+import tshivendakeyboard.R;
 
 public class CandidateView extends View {
 
@@ -304,7 +304,7 @@ public class CandidateView extends View {
     }
 
     /**
-     * For flick through from keyboard, call this method with the x coordinate of the flick
+     * For flick through from co.za.musuku.tshivendakeyboard, call this method with the x coordinate of the flick
      * gesture.
      * @param x
      */

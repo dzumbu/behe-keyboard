@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.vlath.keyboard.CustomKeyboard
+<com.vlath.tshivendakeyboard.CustomKeyboard
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/keyboard"
     android:layout_alignParentBottom="true"
@@ -15,4 +15,4 @@
     android:shadowColor="@android:color/transparent"
     android:shadowRadius="0.0"
     android:background="@color/black">
-    </com.vlath.keyboard.CustomKeyboard>
+    </com.vlath.tshivendakeyboard.CustomKeyboard>

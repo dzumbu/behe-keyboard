@@ -1,4 +1,4 @@
-package com.vlath.keyboard;
+package za.co.musuku.tshivendakeyboard;
 
 /**
  * Created by Vlad on 6/14/2017.
@@ -10,7 +10,6 @@ import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
 import android.inputmethodservice.Keyboard;
 import android.view.inputmethod.EditorInfo;
-import android.view.inputmethod.InputMethodManager;
 
 public class LatinKeyboard extends Keyboard {
 
@@ -92,7 +91,7 @@ public class LatinKeyboard extends Keyboard {
 
     /**
      * This looks at the ime options given by the current editor, to set the
-     * appropriate label on the keyboard's enter key (if it has one).
+     * appropriate label on the co.za.musuku.tshivendakeyboard's enter key (if it has one).
      */
     void setImeOptions(Resources res, int options) {
         if (mEnterKey == null) {
@@ -141,7 +140,7 @@ public class LatinKeyboard extends Keyboard {
 
         /**
          * Overriding this method so that we can reduce the target area for the key that
-         * closes the keyboard.
+         * closes the co.za.musuku.tshivendakeyboard.
          */
         @Override
         public boolean isInside(int x, int y) {

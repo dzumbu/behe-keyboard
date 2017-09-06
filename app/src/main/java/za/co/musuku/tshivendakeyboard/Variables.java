@@ -1,4 +1,4 @@
-package com.vlath.keyboard;
+package za.co.musuku.tshivendakeyboard;
 
 /**
  * Created by Vlad on 6/22/2017.

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vlath.keyboard">
+    package="tshivendakeyboard">
 
     <uses-permission android:name="android.permission.VIBRATE"/>
 
@@ -10,15 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main"
+        <activity android:name="za.co.musuku.tshivendakeyboard.Main"
             android:label="@string/app_name">
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-       <activity android:name=".Preference" android:theme="@style/PreferencesTheme"/>
-        <service android:name="com.vlath.keyboard.PCKeyboard"
+       <activity android:name="za.co.musuku.tshivendakeyboard.Preference" android:theme="@style/PreferencesTheme"/>
+        <service android:name="za.co.musuku.tshivendakeyboard.PCKeyboard"
                  android:label="@string/app_name"
                  android:permission="android.permission.BIND_INPUT_METHOD">
             <meta-data android:name="android.view.im" android:resource="@xml/method"/>
